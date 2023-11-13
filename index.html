@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Űrlap</title>
+</head>
+<body>
+    <div class="container">
+<header>
+    <h1>Regisztráció</h1>
+</header>
+
+<form action="#" method="post">
+    <label for="megszolitas">Megszólítás*</label>
+    <div class="genderoptions">
+        <input type="radio" name="gender" id="urholgy" value="urholgy">
+        <label for="urholgy">Úrhölgy</label>
+        <input type="radio" name="gender" id="ur" value="ur">
+        <label for="ur">Úr</label>
+    </div>
+
+    <div class="namefield">
+        <label for="vezeteknev">Vezetéknév*</label>
+        <input type="text" id="vezeteknev" name="vezeteknev" required>
+
+        <label for="keresztnev">Keresztnév*</label>
+        <input type="text" id="keresztnev" name="keresztnev" required>
+
+    </div>
+
+    <label for="szuletesi-datum">Születési dátum*</label>
+    <input type="date" name="szuletesi-datum" id="szuletesi-datum" required>
+
+    <label for="email">E-Mail cím*</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="emailcim-ismetelt">E-Mail cím ismételt megadása*</label>
+    <input type="text" id="emailcim-ismetelt" name="emailcim-ismetelt" required>
+
+    <label for="password">Jelszó*</label>
+    <input type="text" id="password" name="password" required>
+
+    <label for="password-ismetelt">Jelszó ismételt megadása*</label>
+    <input type="text" id="password-ismetelt" name="password-ismetelt" required>
+
+    <p>*- kötelező mezők</p>
+    <div class="checkbox-options">
+        <input type="checkbox" id="random1" name="random1" value="random1" required>
+        <label for="random1">Random szöveg</label>
+        <input type="checkbox" id="random2" name="random2" value="random2" required>
+        <label for="random2">Random szöveg</label>
+        </div>
+        <button type="submit">Regisztráció</button>
+</form>
+
+    </div>
+</body>
+</html>

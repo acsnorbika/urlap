@@ -1,61 +1,79 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Űrlap</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Regisztráció</title>
 </head>
 <body>
-    <div class="container">
-<header>
-    <h1>Regisztráció</h1>
-</header>
-
-<form action="#" method="post">
-    <label for="megszolitas">Megszólítás*</label>
-    <div class="genderoptions">
-        <input type="radio" name="gender" id="urholgy" value="urholgy">
+<div class="container">
+    <header>
+        <h1>Regisztráció</h1>
+    </header>
+    <form action="#" method="post">
+        <label for="megszolitas">Megszólítás*</label>
+    <div class="gender-options">
+        <input type="radio" id="urholgy" name="gender" value="urholgy">
         <label for="urholgy">Úrhölgy</label>
-        <input type="radio" name="gender" id="ur" value="ur">
+        <input type="radio" id="ur" name="gender" value="ur">
         <label for="ur">Úr</label>
     </div>
+<table>
 
-    <div class="namefield">
-        <label for="vezeteknev">Vezetéknév*</label>
-        <input type="text" id="vezeteknev" name="vezeteknev" required>
+    <tr>
+        <td><label for="vezeteknev">Vezetéknév*</label></td>
+        <td><label for="keresztnev">Keresztnév*</label></td>
+    </tr>
 
-        <label for="keresztnev">Keresztnév*</label>
-        <input type="text" id="keresztnev" name="keresztnev" required>
+<tr>
+    <td><input type="text" id="keresztnev" name="keresztnev" required></td>
+    <td><input type="text" id="vezeteknev" name="vezeteknev" required></td>
+</tr>
+    <tr>
+    <td><label for="szuletesi-ev">Születési év*</label></td>
+    </tr>
+    <tr>
+    <td><input type="date" id="szuletesi-ev" name="szuletesi-ev" required></td>
+    </tr>
+<tr>
+    <td><label for="email">E-Mail cím*</label></td>
+    <td><label for="email-ismetelt">E-Mail cím ismételt*</label></td>
+</tr>
 
-    </div>
+<tr>
+    <td><input type="email" id="email" name="email" required></td>
+    <td><input type="email" id="email-ismetelt" name="email-ismetelt" required></td>
+</tr>
 
-    <label for="szuletesi-datum">Születési dátum*</label>
-    <input type="date" name="szuletesi-datum" id="szuletesi-datum" required>
+<tr>
+    <td><label for="jelszo">Jelszó*</label></td>
+    <td><label for="jelszo-ismetelt">Jelszó ismételt*</label></td>
+</tr>
+<tr>
+    
+    <td><input type="password" id="jelszo" name="jelszo" required></td>
+    <td><input type="password" id="jelszo-ismetelt" name="jelszo-ismetelt" required></td>
+</tr>
+</table>
 
-    <label for="email">E-Mail cím*</label>
-    <input type="text" id="email" name="email" required>
-
-    <label for="emailcim-ismetelt">E-Mail cím ismételt megadása*</label>
-    <input type="text" id="emailcim-ismetelt" name="emailcim-ismetelt" required>
-
-    <label for="password">Jelszó*</label>
-    <input type="text" id="password" name="password" required>
-
-    <label for="password-ismetelt">Jelszó ismételt megadása*</label>
-    <input type="text" id="password-ismetelt" name="password-ismetelt" required>
-
-    <p>*- kötelező mezők</p>
+<table>
     <div class="checkbox-options">
-        <input type="checkbox" id="random1" name="random1" value="random1" required>
-        <label for="random1">Random szöveg</label>
-        <input type="checkbox" id="random2" name="random2" value="random2" required>
-        <label for="random2">Random szöveg</label>
-        </div>
-        <button type="submit">Regisztráció</button>
-</form>
-
+        <tr>
+            <td><input type="checkbox" id="random1" name="random1" value="random1" required></td>
+            <td><label for="random1">Tudomásul vettem és elfogadom az <u>Általános Szerződési Feltételek</u>-et, valamint az
+                <u>Adatkezelési tájékoztató</u>-ban foglaltakat.</label></td>
+        </tr>
+        <tr>
+           <td> <input type="checkbox" id="random2" name="random2" value="random2" required></td>
+            <td><label for="random2">Szeretnék feliratkozni a <strong>A dm Hirlevelem</strong>-re. A hirlevélről bármikor leiratkozhatok. A
+                <u>Hozzájárulás a dm hirlevélhez</u>-t elolvastam és elfogadom.</label></td>
+        </tr>
     </div>
+</table>
+
+<button type="submit">Tovább</button>
+</form>
+</div>
 </body>
 </html>

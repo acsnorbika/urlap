@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>Regisztráció</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Regisztráció</title>
 </head>
 <body>
 <div class="container">
@@ -31,31 +31,37 @@
     <td><input type="text" id="vezeteknev" name="vezeteknev" required></td>
 </tr>
     <tr>
-    <td><label for="szuletesi-ev">Születési év*</label></td>
+    <td colspan="3"><label for="szuletesi-ev">Születési év*</label></td>
     </tr>
     <tr>
-    <td><input type="date" id="szuletesi-ev" name="szuletesi-ev" required></td>
+    <td><input type="number" id="szuletesi-ev" name="szuletesi-ev" required></td>
+    <td><input type="number" id="szuletesi-ev" name="szuletesi-ev" required></td>
+    <td><input type="number" id="szuletesi-ev" name="szuletesi-ev" required></td>
     </tr>
 <tr>
-    <td><label for="email">E-Mail cím*</label></td>
+    <td colspan="1"><label for="email">E-Mail cím*</label></td>
     <td><label for="email-ismetelt">E-Mail cím ismételt*</label></td>
 </tr>
 
 <tr>
-    <td><input type="email" id="email" name="email" required></td>
+    <td colspan="1"><input type="email" id="email" name="email" required></td>
     <td><input type="email" id="email-ismetelt" name="email-ismetelt" required></td>
 </tr>
 
 <tr>
-    <td><label for="jelszo">Jelszó*</label></td>
+    <td colspan="1"><label for="jelszo">Jelszó*</label></td>
     <td><label for="jelszo-ismetelt">Jelszó ismételt*</label></td>
 </tr>
 <tr>
     
-    <td><input type="password" id="jelszo" name="jelszo" required></td>
+    <td colspan="1"><input type="password" id="jelszo" name="jelszo" required></td>
     <td><input type="password" id="jelszo-ismetelt" name="jelszo-ismetelt" required></td>
 </tr>
 </table>
+
+<div>
+    <p><span>*</span> - köteleő mezők</p>
+</div>
 
 <table>
     <div class="checkbox-options">
@@ -72,7 +78,8 @@
     </div>
 </table>
 
-<button type="submit">Tovább</button>
+    <button type="submit">Tovább</button>
+
 </form>
 </div>
 </body>
